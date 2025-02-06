@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Booth</title>
+    <link rel="stylesheet" href="photoStyles.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Booth</h1>
+        <div class="camera-container">
+            <video id="cameraPreview" width="100%" height="auto" autoplay></video>
+        </div>
+        <div class="controls">
+            <button id="switchButton" onclick="switchCamera()">Switch Camera</button>
+            <div id="timer">15</div>
+            <button id="takePictureButton" onclick="takePicture()" disabled>Take Picture</button>
+        </div>
+        <button id="nextButton" class="next-button" onclick="nextPage()" disabled>Next</button>
+    </div>
+
+    <script src="photoScript.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>
